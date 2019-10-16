@@ -39,7 +39,7 @@
 Видео-курс (Coursera):
 
 * https://www.coursera.org/learn/vvedenie-v-yazyk-kotlin
-* https://github.com/Kotlin-Polytech/KotlinAsFirst-Coursera
+* https://github.com/Kotlin-Polytech/KotlinAsFirst-Coursera-v2019
 
 Руководство по настройке среды программирования:
 
