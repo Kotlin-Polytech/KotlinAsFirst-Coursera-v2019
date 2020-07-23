@@ -1,8 +1,9 @@
 # Котлин как первый язык программирования
+[![Build Status](https://travis-ci.org/DanilKozlov00/KotlinAsFirst-Coursera-v2019.svg?branch=master)](https://travis-ci.org/DanilKozlov00/KotlinAsFirst-Coursera-v2019)
 
 Решите приведённые в проекте задачи, чтобы научиться программировать на Котлине. Сейчас доступны двенадцать групп задач (уроков).
 
-1. Простые функции.
+1. Простые функции. ✅
 2. Ветвления.
 3. Циклы.
 4. Работа со списками.
