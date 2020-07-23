@@ -1,8 +1,46 @@
 language: java
 jdk:
   - oraclejdk11
-script: mvn test -Dtest=lesson1.task1.Tests
+sudo: required
+dist: trusty
+before_install: cd LR/03
+addons:
+  chrome: stable
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+script: mvn install
+install:
+  - wget -N http://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip
+    -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+cache:
+  directories:
+    - "$HOME/.m2"
 after_success:
-- cat codecov.yml | curl --data-binary @- https://codecov.io/validate
-- bash <(curl -s https://codecov.io/bash)
-
+  - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
+  - bash <(curl -s https://codecov.io/bash)
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "YOUR GIT USER NAME"
+  - git config --local user.email "YOUR GIT USER EMAIL"
+  - export TRAVIS_TAG=v.0.0.0.29/04/2020
+  - git tag $TRAVIS_TAG
+deploy:
+  api_key:
+    secure: dep_key
+  skip_cleanup: true
+  provider: releases
+  prerelease: true
+  name: 18-VTbo-1b
+  file:
+    - /home/travis/build/Students-of-the-city-of-Kostroma/trpo_automation/LR/03/target/Selen-0.1-jar-with-dependencies.jar
+    - /home/travis/build/Students-of-the-city-of-Kostroma/trpo_automation/LR/03/Labs3_url.xml
+    - /home/travis/build/Students-of-the-city-of-Kostroma/trpo_automation/LR/03/labs.xml
+  on:
+    branch: dev
+    condition: $TRAVIS_COMMIT_MESSAGE == *"release"*
