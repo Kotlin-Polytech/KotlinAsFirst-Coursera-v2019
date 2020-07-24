@@ -1,5 +1,5 @@
 package lesson3.task1
-
+/*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
@@ -247,3 +247,5 @@ class Tests {
         assertEquals(2, fibSequenceDigit(20))
     }
 }
+
+ */

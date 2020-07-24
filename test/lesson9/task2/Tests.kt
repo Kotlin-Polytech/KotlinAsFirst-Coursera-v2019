@@ -1,5 +1,5 @@
 package lesson9.task2
-
+/*
 import lesson9.task1.Matrix
 import lesson9.task1.createMatrix
 import org.junit.jupiter.api.Assertions.*
@@ -422,3 +422,5 @@ class Tests {
         ).assertSolution()
     }
 }
+
+ */

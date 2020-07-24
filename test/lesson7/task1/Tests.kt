@@ -1,5 +1,5 @@
 package lesson7.task1
-
+/*
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
@@ -431,3 +431,6 @@ Basic, Ruby, Swift.
         File("temp.txt").delete()
     }
 }
+
+
+ */

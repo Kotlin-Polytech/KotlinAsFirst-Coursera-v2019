@@ -1,5 +1,5 @@
 package lesson11.task1
-
+/*
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
@@ -104,3 +104,5 @@ class PolynomTest {
         assertEquals(Polynom(1.0, 2.0, 3.0).hashCode(), Polynom(1.0, 2.0, 3.0).hashCode())
     }
 }
+
+ */

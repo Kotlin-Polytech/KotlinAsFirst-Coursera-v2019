@@ -1,5 +1,5 @@
 package lesson8.task2
-
+/*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
@@ -175,3 +175,6 @@ class Tests {
         knightTrajectory(square("a8"), square("h1")).assertKnightTrajectory(square("a8"), square("h1"), 6)
     }
 }
+
+
+ */

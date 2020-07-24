@@ -1,5 +1,5 @@
 package lesson10.task1
-
+/*
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
@@ -23,3 +23,5 @@ class Tests {
         assertEquals(mapOf(0 to 1, 1 to -1, -1 to 1), parseExpr("input/expr_in6.txt", listOf(0, 1, -1)))
     }
 }
+
+ */

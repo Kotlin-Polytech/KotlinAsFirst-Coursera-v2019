@@ -3,7 +3,7 @@ package lesson4.task1
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
-
+/*
 class Tests {
     @Test
     @Tag("Example")
@@ -240,3 +240,4 @@ class Tests {
         assertEquals("двенадцать", russian(12))
     }
 }
+*/

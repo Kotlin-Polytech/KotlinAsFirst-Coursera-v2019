@@ -1,5 +1,5 @@
 package lesson12.task1
-
+/*
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
@@ -81,3 +81,5 @@ internal class TableFunctionTest {
         assertEquals(f1, f2)
     }
 }
+
+ */

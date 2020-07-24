@@ -1,5 +1,5 @@
 package lesson12.task1
-
+/*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
@@ -120,3 +120,5 @@ class SinglyLinkedListTest {
         assertTrue(first.hashCode() == second.hashCode())
     }
 }
+
+ */
