@@ -1,5 +1,5 @@
 # Котлин как первый язык программирования
-[![Build Status](https://travis-ci.org/DanilKozlov00/KotlinAsFirst-Coursera-v2019.svg?branch=master)](https://travis-ci.org/DanilKozlov00/KotlinAsFirst-Coursera-v2019)
+[![Build Status](https://travis-ci.org/DanilKozlov00/KotlinAsFirst-Coursera-v2019.svg?branch=master)](https://travis-ci.org/DanilKozlov00/KotlinAsFirst-Coursera-v2019) [![codecov](https://codecov.io/gh/DanilKozlov00/KotlinAsFirst-Coursera-v2019/branch/master/graph/badge.svg)](https://codecov.io/gh/DanilKozlov00/KotlinAsFirst-Coursera-v2019)
 
 Решите приведённые в проекте задачи, чтобы научиться программировать на Котлине. Сейчас доступны двенадцать групп задач (уроков).
 
