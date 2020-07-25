@@ -1,10 +1,6 @@
 language: java
 jdk:
   - oraclejdk11
-script:
-  - mvn test -Dtest=lesson1.task1.Tests
-  - mvn test -Dtest=lesson2.task1.Tests
-  - mvn test -Dtest=lesson2.task2.Tests
 after_success:
 - bash <(curl -s https://codecov.io/bash)
 

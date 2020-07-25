@@ -1,4 +1,4 @@
-@file:Suppress("UNUSED_PARAMETER")
+ @file:Suppress("UNUSED_PARAMETER")
 
 package lesson1.task1
 
@@ -45,13 +45,8 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
     return x1 * x2 // Результат
 }
 
-/**
- * Пример главной функции
- */
-fun main() {
-    val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
-    println("Root product: $x1x2")
-}
+
+
 
 /**
  * Тривиальная

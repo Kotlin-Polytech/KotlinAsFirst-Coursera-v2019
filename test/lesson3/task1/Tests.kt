@@ -1,5 +1,5 @@
 package lesson3.task1
-/*
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
@@ -130,6 +130,7 @@ class Tests {
         assertEquals(1, maxDivisor(Int.MAX_VALUE))
     }
 
+
     @Test
     @Tag("Easy")
     fun isCoPrime() {
@@ -199,6 +200,7 @@ class Tests {
     fun revert() {
         assertEquals(87431, revert(13478))
         assertEquals(0, revert(0))
+        assertEquals(-87431, revert(-13478))
         assertEquals(3, revert(3))
         assertEquals(111, revert(111))
         assertEquals(17571, revert(17571))
@@ -210,6 +212,7 @@ class Tests {
     fun isPalindrome() {
         assertTrue(isPalindrome(3))
         assertFalse(isPalindrome(3653))
+        assertFalse(isPalindrome(-3653))
         assertTrue(isPalindrome(15751))
         assertTrue(isPalindrome(24688642))
     }
@@ -222,7 +225,10 @@ class Tests {
         assertTrue(hasDifferentDigits(222266666))
         assertFalse(hasDifferentDigits(0))
         assertFalse(hasDifferentDigits(777))
+        assertTrue(hasDifferentDigits(-777))
+        assertFalse(hasDifferentDigits(677))
         assertTrue(hasDifferentDigits(31122))
+
     }
 
     @Test
@@ -248,4 +254,3 @@ class Tests {
     }
 }
 
- */
