@@ -45,6 +45,11 @@ class Tests {
         assertEquals(29, daysInMonth(2, 1996))
         assertEquals(28, daysInMonth(2, 1900))
         assertEquals(29, daysInMonth(2, 2000))
+        assertEquals(30, daysInMonth(9, 2000))
+        assertEquals(31, daysInMonth(10, 2000))
+        assertEquals(30, daysInMonth(11, 2000))
+        assertEquals(31, daysInMonth(12, 2000))
+        assertEquals(-1, daysInMonth(13, 2000))
     }
 
     @Test
