@@ -17,7 +17,10 @@ class Tests {
     @Tag("Example")
     fun gradeNotation() {
         assertEquals("отлично", gradeNotation(5))
+        assertEquals("хорошо", gradeNotation(4))
         assertEquals("удовлетворительно", gradeNotation(3))
+        assertEquals("неудовлетворительно", gradeNotation(2))
+        assertEquals("несуществующая оценка 0", gradeNotation(0))
     }
 
     @Test
