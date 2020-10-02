@@ -1,0 +1,12 @@
+package com.split.Main
+
+fun main(args: Array) {
+  val str = "bezkoder.com = Programming Tutorials - Web Development - Mobile App"
+
+  val separate2 = str.split("=", "-").map { it.trim() }
+  println(separate2)
+}
+-------------------------------------------------------------------------------------
+
+# Output
+[bezkoder.com, Programming Tutorials, Web Development, Mobile App]
