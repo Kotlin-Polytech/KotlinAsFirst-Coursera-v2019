@@ -50,7 +50,7 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
  * Пример главной функции
  */
 fun main() {
-    val result = thirdDigit(3801)
+    val result = thirdDigit(38321)
     println(result)
 }
 
