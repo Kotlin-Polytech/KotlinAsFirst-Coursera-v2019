@@ -1,4 +1,4 @@
- @file:Suppress("UNUSED_PARAMETER")
+@file:Suppress("UNUSED_PARAMETER")
 
 package lesson1.task1
 
@@ -45,9 +45,6 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
     return x1 * x2 // Результат
 }
 
-
-
-
 /**
  * Тривиальная
  *
@@ -93,7 +90,7 @@ fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double =
  */
 fun thirdDigit(number: Int): Int {
     var digit: Int = number
-    digit = digit / 100
+    digit /= 100
     while (digit >= 10) {
         digit %= 10
     }
@@ -118,11 +115,11 @@ fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minute
  * Например, 100 рублей под 10% годовых превратятся в 133.1 рубля
  */
 fun accountInThreeYears(initial: Int, percent: Int): Double {
-    var Money: Double = initial.toDouble()
+    var money: Double = initial.toDouble()
     for (i in 1..3) {
-        Money += Money / 100 * percent
+        money += money / 100 * percent
     }
-    return Money
+    return money
 }
 
 /**

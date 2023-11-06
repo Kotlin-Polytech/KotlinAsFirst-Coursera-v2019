@@ -4,8 +4,6 @@ package lesson4.task1
 
 import lesson1.task1.discriminant
 import lesson1.task1.sqr
-import lesson3.task1.digitNumber
-import javax.print.attribute.IntegerSyntax
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -177,14 +175,14 @@ fun center(list: MutableList<Double>): MutableList<Double> {
  * C = a1b1 + a2b2 + ... + aNbN. Произведение пустых векторов считать равным 0.
  */
 fun times(a: List<Int>, b: List<Int>): Int {
-    var C: Int = 0
+    var c: Int = 0
     return if (a.isEmpty() && b.isEmpty()) {
         0
     } else {
         for (i in a.indices) {
-            C += a[i] * b[i]
+            c += a[i] * b[i]
         }
-        C
+        c
     }
 }
 
@@ -198,15 +196,15 @@ fun times(a: List<Int>, b: List<Int>): Int {
  */
 fun polynom(p: List<Int>, x: Int): Int {
     var polynom: Int = 0
-    if (p.isEmpty()) {
-        return 0
+    return if (p.isEmpty()) {
+        0
     } else if (p.size == 1) {
-        return p[0]
+        p[0]
     } else {
         for (i in p.indices) {
             polynom += p[i] * x.toDouble().pow(i.toDouble()).toInt()
         }
-        return polynom
+        polynom
     }
 }
 
@@ -285,7 +283,7 @@ fun convert(n: Int, base: Int): List<Int> {
     return if (n == 0) listOf(0)
     else {
         var temp = n
-        var result = listOf<Int>()
+        val result = mutableListOf<Int>()
         while (temp > 0) {
             result += temp % base
             temp /= base
@@ -329,7 +327,7 @@ fun convertToString(n: Int, base: Int): String {
 fun decimal(digits: List<Int>, base: Int): Int {
     var digit: Int = 0
     for (i in digits.indices) {
-        digit += digits[i] * Math.pow(base.toDouble(), (digits.size - 1 - i).toDouble()).toInt()
+        digit += digits[i] * base.toDouble().pow((digits.size - 1 - i).toDouble()).toInt()
     }
     return digit
 }
@@ -476,18 +474,22 @@ fun russian(n: Int): String {
                 resultPart1.removeAt(resultPart1.size - 1)
                 resultPart1.add("одна тысяча")
             }
+
             (nPart1 % 10 == 2) && (nPart1 % 100 != 12) -> {
                 resultPart1.removeAt(resultPart1.size - 1)
                 resultPart1.add("две тысячи")
             }
+
             (nPart1 % 10 == 3) && (nPart1 % 100 != 13) -> {
                 resultPart1.removeAt(resultPart1.size - 1)
                 resultPart1.add("три тысячи")
             }
+
             (nPart1 % 10 == 4) && (nPart1 % 100 != 14) -> {
                 resultPart1.removeAt(resultPart1.size - 1)
                 resultPart1.add("четыре тысячи")
             }
+
             else -> {
                 resultPart1.add("тысяч")
             }

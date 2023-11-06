@@ -85,14 +85,14 @@ fun timeForHalfWay(
     t2: Double, v2: Double,
     t3: Double, v3: Double
 ): Double {
-    val HalfWay: Double = (t1 * v1 + t2 * v2 + t3 * v3) / 2
-    if (HalfWay / v1 <= t1) {
-        return HalfWay / v1
+    val halfWay: Double = (t1 * v1 + t2 * v2 + t3 * v3) / 2
+    if (halfWay / v1 <= t1) {
+        return halfWay / v1
     }
-    if ((HalfWay - t1 * v1) / v2 <= t2) {
-        return t1 + (HalfWay - t1 * v1) / v2
+    if ((halfWay - t1 * v1) / v2 <= t2) {
+        return t1 + (halfWay - t1 * v1) / v2
     }
-    return t1 + t2 + ((HalfWay - t1 * v1 - t2 * v2) / v3);
+    return t1 + t2 + ((halfWay - t1 * v1 - t2 * v2) / v3)
 }
 
 /**
@@ -157,9 +157,11 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
             max(max(a, b), c) == a -> {
                 "a"
             }
+
             max(max(a, b), c) == b -> {
                 "b"
             }
+
             else -> "c"
         }
 
@@ -169,31 +171,39 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
                     a * a == b * b + c * c -> {
                         1
                     }
+
                     a * a < b * b + c * c -> {
                         0
                     }
+
                     else -> 2
                 }
             }
+
             "b" -> {
                 return when {
                     b * b == a * a + c * c -> {
                         1
                     }
+
                     b * b < a * a + c * c -> {
                         0
                     }
+
                     else -> 2
                 }
             }
+
             "c" -> {
                 return when {
                     c * c == a * a + b * b -> {
                         1
                     }
+
                     c * c < a * a + b * b -> {
                         0
                     }
+
                     else -> 2
                 }
             }
